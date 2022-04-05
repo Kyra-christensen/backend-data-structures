@@ -2,19 +2,19 @@ class Stack {
   constructor() {
     this.pile = [];
   }
-
+  // push(item) should add an item to the array using the .push method
   push(item) {
     return this.pile.push(item);
   }
-
+  //pop() should remove the last item in the array 
   pop() {
     return this.pile.pop();
   }
-  
+  //peek() should look at the last item within that array, but it doesn't do anything to that item, just views it.
   peek() {
     return this.pile[this.length - 1];
   }
-
+  
   get length() {
     return this.pile.length;
   }
